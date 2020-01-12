@@ -1,28 +1,28 @@
 # Modul5
 1. Buatlah menu sebagai basic perintah untuk Tambah,Lihat,Ubah,Hapus,Cari,Keluar sperti berikut:
--perintah = input("(T)ambah, (L)ihat, (U)bah, (H)apus, (C)ari, (K)eluar: ")
+- perintah = input("(T)ambah, (L)ihat, (U)bah, (H)apus, (C)ari, (K)eluar: ")
 
 2. Untuk menambahkan data, gunakan
--if perintah.lower() == 't':
--nim = input("Masukan NIM: ")
--nama = input("Masukan nama: ")
--n_tugas = int(input("Masukan nilai tugas: "))
--n_UTS = int(input("Masukan nilai UTS: "))
--n_UAS = int(input("Masukan nilai UAS: "))
--a = n_tugas * 30 / 100
--b = n_UTS * 35 / 100
--c = n_UAS * 35 / 100
--n_akhir = a + b + c
--daftar[nama] = [nama, nim, n_tugas, n_UTS, n_UAS, n_akhir]
--jangan lupa gunakan nested dictionary dalam menambahkan data
+- if perintah.lower() == 't':
+- nim = input("Masukan NIM: ")
+- nama = input("Masukan nama: ")
+- n_tugas = int(input("Masukan nilai tugas: "))
+- n_UTS = int(input("Masukan nilai UTS: "))
+- n_UAS = int(input("Masukan nilai UAS: "))
+- a = n_tugas * 30 / 100
+- b = n_UTS * 35 / 100
+- c = n_UAS * 35 / 100
+- n_akhir = a + b + c
+- daftar[nama] = [nama, nim, n_tugas, n_UTS, n_UAS, n_akhir]
+- jangan lupa gunakan nested dictionary dalam menambahkan data
 
 3.untuk metode print, dapat digunakan sebagai berikut : 
--elif perintah.lower() == 'l':
--print("Daftar Nilai:")
--print("===================================================================")
--print("| No |      Nama      |    NIM    | Tugas |  UTS  |  UAS  | Akhir |")
--print("===================================================================")
--no = 1
+- elif perintah.lower() == 'l':
+- print("Daftar Nilai:")
+- print("===================================================================")
+- print("| No |      Nama      |    NIM    | Tugas |  UTS  |  UAS  | Akhir |")
+- print("===================================================================")
+- no = 1
 -        for tabel in daftar.values():
 -            print("| {0:2} | {1:14} | {2:9} | {3:5} | {4:5} | {5:5} | {6:5} |".format
 -                  (no, tabel[0],
